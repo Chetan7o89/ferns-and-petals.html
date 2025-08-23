@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<head>
+    <title>Flower Shop Broscher</title>
+    <style type="text/css">
+        @font-face {
+            src:url(Enjelina.ttf);
+            font-family: Enjelina;
+        }
+        #myh1 {
+            font-family: Enjelina;
+            font-size: 70px;
+        }
+        #myh1:hover
+         {
+            text-shadow: 5px 5px 5px aqua; 
+        }
+        @font-face {
+            src:url(Enjelina.ttf);
+            font-family: Enjelina;
+        }
+        #myh2 {
+            font-family: Enjelina;
+            font-size: 40px;
+        }
+        #myh2:hover
+         {
+            text-shadow: 5px 5px 2.5px burlywood; 
+        }
+        #myh3
+        {padding: 20px;
+            width:600px;
+            height:250px solid transparent;
+            border-image-source: url(https://i.pinimg.com/736x/9c/c6/ea/9cc6eaa1128d4b846e6d7bdc348e516e.jpg);
+            border-image-width: 20px;
+            border-image-repeat: round;
+            border-image-slice: 12%;
+            border-radius: 10px;
+        }
+        #myh3:hover
+        {
+            width:650px
+        }
+        #outer
+        {
+            width: 1210px;
+            height: 550px;
+            background: linear-gradient( rgb(242, 242, 242), rgb(3, 167, 167));
+            border-radius: 50px;
+         border-color: aqua;
+         border-style: groove;
+         opacity: 0.8;
+        }
+        #middle
+        {
+            width: 200px;
+            height: 500px;
+            background: linear-gradient(to left, blanchedalmond, rgb(167, 3, 167));
+            float:left;
+            margin: 20px;
+            border-radius: 45px;
+            box-shadow: 8px 8px 4px whitesmoke;
+            opacity: 0.9;    
+        }
+        #middle:hover
+        {
+            width:210px;
+            height:510px;
+        }
+        #image
+        {
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            transition-timing-function: ease-in-out;
+        }
+        #image:hover
+        {
+          width:52px;
+          height:52px;
+          
+        }
+        #picture
+        {
+            width: 650px;
+            height: 450px;
+            border-radius: 50px;
+            float: left;
+            margin: 30px;
+            border-color: aqua;
+            border-style:groove;
+        }
+        #picture:hover
+        {
+            width: 670px;
+            height: 470px;
+            border-radius: 54px;
+            border-color: rgb(6, 65, 133);
+            border-style:groove;
+        }
+        #myh4
+        {
+           background-color: rgb(255, 249, 205);
+           float: left;
+           width: 25%;
+           margin-top: 50px;
+        }
+        #button
+        {
+           background-color: darkviolet;
+           font-style: initial;
+           border-color: bisque;
+           border-style: groove;
+           height: 60px;
+           width:120px;
+           float: left;
+           border-top-left-radius: 8px;
+           border-bottom-left-radius: 8px;
+           text-shadow: 4px 4px 4px pink;
+        }
+    
+        #button-1
+        {
+           background-color:white;
+           font-style: initial;
+           border-color: bisque;
+           border-style: groove;
+           height: 53px;
+           width:400px;
+           float: left;
+          
+           text-shadow: 4px 4px 4px pink;
+        }
+        #button-image
+        {
+           
+           border-color: bisque;
+           border-style: groove;
+           height: 54px;
+           width:60px;
+           float: left;
+           border-top-right-radius: 8px;
+           border-bottom-right-radius: 8px;
+        }
+        #myh5
+        {
+           background-color: white;
+           float: left;
+           width: 33.33%;
+           margin-top: 50px;
+        }
+    </style>
+<body style="background-image: url(https://media.istockphoto.com/id/1337260312/photo/floral-seamless-pattern-multicolored-flowers-peonies-on-a-black-background.webp?b=1&s=170667a&w=0&k=20&c=fw-XCmd2YPHzxObmOs6-YLBCmqe6V26AOisMtgVbqmc=);">
+    <div
+    align="center" 
+    height="900px"
+    width="900px"
+    style="background: linear-gradient(to bottom,rgb(226, 224, 236),rgb(3, 8, 79));border-style: groove;border-radius: 10px;border-color: bisque;opacity: 0.8;">
+   
+    <h1
+    align="center"
+    id="myh1"
+    style="text-shadow: 4px 4px 5px rgb(24, 239, 239);">Ferns & Petals
+    <img src="data:image/jpeg;base64,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
+    rZyO1C595WHGPamw9rYy5UvR/9k="
+    align="center"
+ style="border-radius: 4px;">
+
+    <img src="https://t4.ftcdn.net/jpg/05/47/06/85/360_F_547068574_lQonE4gxTSNmNOv3xm9w4Lsil9OMQQVd.jpg"
+    align="center"
+    style="border-radius: 6px;border-color: black;
+    width: 140px;
+    height:194px;">
+ </h1>
+</div>
+<br><br><br>8
+<div
+style="background: linear-gradient(to bottom,rgb(25, 3, 100),rgb(66, 149, 187));border-style: groove;border-radius: 10px;border-color: bisque;opacity: 0.9;">
+ <p font-size="33px"
+ style="text-shadow: 5px 5px 10px rgb(30, 3, 89);">
+ <h2 id="myh1"
+ style="text-shadow: 4px 4px 5px rgb(24, 239, 239);">Who we are??</h2> 
+ <img src="https://img.freepik.com/free-photo/attractive-pleased-dark-skinned-model-receives-flowers-as-present-stands-with-closed-eyes-enjoys-her-favorite-gerberas_273609-43295.jpg" 
+ height="300px"
+ width="500px"
+ style="margin-left: 800px;margin-top:-100px;border-radius: 60px;box-shadow: 5px 5px 2.5px antiquewhite;">
+ 
+    <br><br>
+We are Ferns N Petals: India's Biggest Gifting Solutions Provider
+
+For over 25 years, we are helping customers to celebrate their special moments by delivering fresh flowers and fabulous gifts. Ferns N Petals was established in 1994 and flower bouquet delivery was the first and only thing that the company was into. From just 1 flower shop in Delhi during 1994, Ferns N Petals is now the largest florist chain with more than 320 stores 
+(and still counting) across all the major cities and towns of India.
+
+Today, Ferns N Petals Group encompasses of FNP Retail & Franchising, FNP E-commerce- India, UAE, Singapore & Qatar, FNP Weddings & Events, Floral Touch- India & UAE, FNP Gardens, Handicrafts, The Flagship Store by FNP, WDH (Wedding Design Hub), FNP Cakes 'N' More and FNP Media. The brand is one stop shop for all gifting needs, be it buying flowers, cakes, plants, personalized gifts, decoration services, or experiences, not only in India but across the globe.
+ </p>
+</div>
+<br><br>
+<img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_prodm/products/p-the-white-rose-bouquet-by-ftd-vase-included-137592-m.jpg" 
+align="left"
+height="200px"
+width="150px"
+style="border-radius: 10px;border-style: groove;border-color: bisque;box-shadow: 10px 5px 10px bisque;">
+
+<img src="https://media.istockphoto.com/id/178509071/photo/red-roses.jpg?s=612x612&w=0&k=20&c=iJZoa5n7FUakmBXD51ZF_9IoldrOmgIBNCuB8uBKsn0=" 
+align="right"
+height="200px"
+width="150px"
+style="border-radius: 10px;border-style: groove;border-color: bisque;box-shadow: 10px 5px 10px bisque;">
+<div
+align="center"
+style="background-color: bisque;font-size: smaller;opacity: 0.7;height: auto;width: 900px;margin-left: 300px;
+border-radius: 40px;border-style: groove;border-color: aqua;">
+<p
+id="myh2"
+align="center"
+height="auto"
+width="200px"
+style="border-radius: 30px;"> 
+"Where flowers bloom so does hope" <br>by-(Lady Bird Johnson)</p></div>
+<br><br><br><br><br><br><br>
+<div
+style="background-image: url(https://media.istockphoto.com/id/145242985/photo/bouquet-of-lily.jpg?s=612x612&w=0&k=20&c=30zPQCiIEK32NOdYpzmGVhZSrJh6hQ2pqeIweDsX_F4=);
+opacity: 0.7;
+border-radius: 20px;
+border-style: groove;
+border-color: aqua;">
+    <h2 id="myh1"
+    style="text-shadow: 4px 4px 5px rgb(24, 239, 239);"
+    >Our International Strategy--</h2>
+    <hr >
+    <p>
+        After being the market leaders in India, Ferns N Petals has expanded its international footprints into the South East Asian and Middle East market. In addition to a physical presence, with three stores in UAE and one in Singapore, we also have built a strong online presence with three separate websites for each of the territories. We now boast of a specific website www.fnp.ae for UAE, www.fnp.sg a for Singapore and www.fnp.qa for Qatar to cater to the unique set of customers in each of these regions. We plan to expand into one new country each year.
+    </p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd3s3sF7Zc8iZTg1aHq2uAR3paknjr_AO_zIeWhlIDng&s" 
+    style="border-radius: 8px;border-color: aqua;border-style: double;
+    box-shadow: 5px 5px 2px aqua;">
+</div>
+<br><br><br>
+<div
+id="myh3"
+style="background-color:blanchedalmond;margin-left: 400px;opacity: 0.7;border-radius: 10px;">
+    <h2 
+    align="center"
+    id="myh1">
+    Our core values!
+
+</h2>
+</div>
+<br><br><br>
+<!-- outer div starts -->
+<div id="outer"
+align="center">
+<div id="middle">
+<h1 id="myh2">Continuous Transformation</h1>
+<img src="https://w7.pngwing.com/pngs/412/989/png-transparent-arrow-computer-icons-circle-clockwise-curved-arrow-tool-text-bow-and-arrow-symbol.png"id="image">
+<hr>
+Experiment, Innovation, Continuous Improvement, Curiosity, Sharing & seeking knowledge, Collaboration, Being Devil's advocate, Introspection, Resilience, Agility, Adaptability, Diversity
+</div>
+
+
+<div id="middle"
+    align="center">
+        <h1 id="myh2">Character</h1>
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGCBUVExcVFRMXFxcXGhoYGRoYGhoZGhkaGRgYGRkcGhkfICsjGh8oHxcXJDUkKCwuMjIyGSE5PDcxOywxMi4BCwsLDw4PGxERHTEoISkxLjMxMTExMTExMTEzMTExMTExMTExMTExMTExMTMxMTExMTExMTExMTExMTExMTExMf/AABEIARAAugMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwMEBQYIAgH/xABIEAACAQICBwUDCQUFBwUAAAABAgMAEQQhBQYHEjFBURMiYXGRMlKBFEJicoKSobHBCCOissJTc5PR8UODo7PD0uEVMzVj8P/EABgBAQEBAQEAAAAAAAAAAAAAAAADAgEE/8QAJREAAgICAgEEAgMAAAAAAAAAAAECEQMSITFBEyIyUWGBQlKh/9oADAMBAAIRAxEAPwCZqUpQClKUApSlAKUpQClK0najrwmjogqWfEyC6IeCrmN9x7twQBzIPQkAZXW7WzC4BA08neIusad6R/JeQyPeJA8aj6PXLS+kmIwECYaG9u1ezW43vIw3T5IhIvx51h9RtTZMc5x+kWdkc76qxIaboze7HYAAC1wBawteTxYKERQiKAFRQAqgcAAMhU5zrorjxOZph1GxMlzitMYhyeKoX3QfC72t4boq1k2b4mO7YTSsityDF48/F0ckfdrfK+xuQbip+rIu8Ea4NM1d17xmBxC4TSy3VsknyyF7BmK5OnjYMM734CW1N8xmDUd7VdDLitHyNb95CpmjPMBReRfIqDl1C9KqbCNOnEYDsnN3wzCPjn2ZF4yelgGQeEYq0ZWjyyjTJDpSlaMilKUApSlAKUpQClKUApSlAKUpQClKUBiNatMx4PCyYmX2UGQHFmJsqjxJIF+XHlUI6haIl0xpCTFYrvRqQ8mR3Wb5kS9FAAuM+6LfOvWW/aM00WlhwanuovbP0LtdUB8QoY/7ypE2c6CGDwEUVrSMvaS9TI4BYHruiy+SiuM6jMNAoAFr29PDKqE+EUjuix/CrpjnSptIvGTRgyKVVxo77ef5i9Uqgz1p2rLpY9+IqeDKy/Agj9aiz9m3FWxWJi9+JX/w3C/9WpT39yIsfmqzegJqJ/2cIL42eTksG79+RD/Qa9GLo8OX5E9UpSqEhSlKAUpSgFKUoBSlKAUpSgFKUoBSlfCaA5w0gPlusbKQCrYsIeYMcLBD6pH+NdD1zdsqmL6YgduLNM58zDK3510gpvnWX2aXRRNK+yDOrPH4iw3RxPHwFYbotFbdFjO92J6n/SvKLcgda+Vd4WK2Z41Bcs9MpKKMRtCxgh0bimvb900Y63ktGLfF61f9mzBERYqbkzxxj7Cszf8AMX0r5t80huYWKEGxlkLHxSNcwftOh+zW0bD8B2WiojaxlZ5T43cqp+KIlemC4PDN8m80pStmBSlKAUpSgFKUoBSlKAUpSgFKUoBVLEAlWA42NvSqtKA5W2a4sRaTwrHgZNz/ABAY/wCuuk45COFcza5YBsHpCeJe72cpaO3JCd+Mjp3WU10FqrpdcXhYsQvz17w91xk6/BgfMWPOsT+ykPozLzk+FWjYZT19arUqT57KJtdFOOFRy9aqUpQNt9kH7eMUWxyR3yjhXL6TszE+m56VOeqeE7LB4aL+zhjU+YRQT63rnnbG5OlZx7oiA/wYz+ZNdMothYcquuiEuz3SlK6cFKUoBSlKAUpSgFKUoBSlKAUpSgFKUoCG/wBofV0kR45F9m0U1uhJMbH4kqT4rWr7HtaPkuI+TyNaGcgAngkpsqt4BslP2TwFT/pjAR4iF4ZBvJIpRh4EcR0I4g8iBXKesuiXwmJlw0ntRMVvw3l4qwHIMpVvjXGrOp0dQUrTtk2snyzCbkjXmgsj34stv3b+JIBB8VJ51uNRaoqnYpShrh0572u//Jym3FYj5/ukH6fhXSGhcSJYIpBwkjRx5OgYfnXPe2vD7uNR7ZSRKb+Ksyn8AvrUv7HdI9torDm/ejBibw7MkKPubh+NWj8UTmqkzcqUpWjApSlAKUpQClKUApSlAKUpQClKUApSlAKiD9ojQG9HHjUGaERSeKEkox8m3l8d9elS/WE130eMRgMTCQDvxPu34b6jejPwZVPwoDnrZTpc4bSMVzZJT2L+UhAU/B9w+QNdD1yhE5VgymxBBB6EZg11ZC+8qt7wDeovU8iKQZ7pSlTNkR7c8HePDy+67xn7YDL/ACN61X/Z003uyTYNjk47WP6y2Vx4kruHyQ1se0zR3bYGdAO8g7ReecZ3jbxK7w+NQdoDSb4XERYiP243DDoRwZT4MCQfA1XG+KOZl7r+zrylY/QOk48VBHiIjdJFDDqORU+IIII6g1kK2RFKUoBSlKAUpSgFKVZ6Tx8UEbSzOqRoLszGwHTzJOQHEmgLurfG4uOJS8siRoOLOwRR5sSBUN66bYnYtHgF3FzHbOAWPiiHJR4tc58BWrYfVLSukG7WUSG/CTEuVy+irXbd6WW1cboUTFpLabouIkfKe0I5Ro7j4MBun1rA4jbXgx7GHxDfWEa/k5rXNH7HTkZsYo6rGhb0ZiP5azEWyLBD2psQ3k0aj/lmubI1oyjNtxUHu4AkfSmCn0EZrym3EXz0eQPCe59OyFZJdlWj+kx/3g/7apy7JsAeDYhfKRP1jNN0d0Z8g224b52EmHkyN+ZFVZts+CZGHYYkEggd2O2Y/vKspdkOD+bPiB5mM/0CrKfY2p9jGsB0aEN+IkH5U2RzRkRKL11bhk3UVfdVR6ACtC1Y2XQYeVZZZmnZGDKu4I0uMwWG8xaxz4gdb1INYnJPo3BUKVdYdBu8ONUJksfDlWa4O3yYvS6d1vpKR8bf6VAGu+hPk828g/dSXK24KeafDl4eRrozEJvCo+09oxJUkhcd29geakeyw8axvpK/BbX1IV5RrWxXXP5LN8mma2HmYbpPCOU2APgrZA9MjkL10FXIemtGPh5TG/EZg8mB4MPD/I1OmxTXH5VD8mma88CizE5yR8AfFlyB63U5km3pTvlHkap0ySaUpXTgpSlAKUpQGL1k0xFhIHxEzWRBwHtMTwVRzYnIfjYXNc9ab0zjdN4tY1U2ueziU9yNebMeZAObnrkBktZjbhp18Vjlwkd2SAhAq/Pme28bcyLhB0IbrUgbL9WEwce6QDKy70j9WysoPurf45nnWZSo1GN2/o+aibPIcGquwEk/EyMMlPSNfm/W4nw4VufyT6X4f+auq+1yl5G30WLYU8iD+FUWUjIi1ZSqcsYYWP8ApWXD6NKX2YXSGHd1skzxH3kEZb/iKwHpWr6Q1UkY3bSOkB9WZVX7qoBW5MtjbpXysclE15RGmJ1X0jHdsLpWZjySZnI9SWUn7IrHYfaFj8HIItIYcOPeAEbkc2Vl/duBfkB5ipSxGH5r6f5Vh9N6KixURimQMp4H5yNyZD81h/4OVFP+xR44yVxL/VvT2HxkXaQSBgLbynJ0J5OvLnnwNsiaydc5yjEaIx/cbvRm4PBZYmzsw5qwFiORGRuAan7QWk0xUEc8fsSKGA5qeDKfFSCD5VqSrlEE/DMxhDl8a9ypcWqjhGzI61c11co4+GY+td1nwNj2qjI2DeB4A/Hh/rWz4lLG/WqLoCCCLg5EHmDU5xvgrCdOyLdZtCpiotw2Drcxt7p6H6J5+vKo00ZjZsDikkXuSwvex+IZT1DKSDbiDU3aYwBie3FDmp/Q+IqPtpWhwyDEoO8tlk8VOSt5g5eRHSuYZuL1ZvNBSWyJ31c0vHi8PHiIz3ZFDW5g8GU+KkEHyrJ1Bf7PesRSZ8E7d2W8kd+UijvAfWQX+x41Oleo8YpSlAKUpQHO2z6IYjTM0rZlWnmH1mksD/xCfhUy6Nk3ZAetwfL/APCog2bDstMYqI5G08YHikqn8kapbwvtD4/kahkfuPXjS9N/s2JTfMV6rGRyFeBquuL6j0ramjzuLLyvNWxxf0fxqjLMW8ugo5o6os8zNdia80pUzYqwxSWbzzq/qzxp73w/zrkuiuP5EZbccCDDDOB3kcxnxVlLC/kUP3jV7sB0iWgngJP7t1db9JAQQPAGO/2qqbZpANH2PzpUA87O35Kawn7PpPb4kcuzX1D5fmapH4E8nGQmRGsQavxWPq6wr3FulIsxJFSRLi1WJFZCrfFx8/WkkIsx+PwokQoefA9DyNaPpDB7yvE4yYMjDzFjb/OpArXda8LYrIOfdbzHA+l/SoTXk9GOXNM5+w08mFxCuptJBJcdN6NufUXHpXV+hscs8Ecy+zKiyL1AdQ1j4i9cv6/YfcxsnR91x9pRf+INUwbENbIZcLHgmcriIlYANkJE3mYbh5lVIBHHK+Yvb1J2kzySVNok2lKVoyKUpQHPe0SM6O078oVe47LOAPnLICsw6XJ7T7wqXdFSK4EiMGRlDKw4EMLgj4fnWJ2y6rHG4TfjW8+Hu6AcXUgb6AcyQAR4rbnUdbLNfBhwMLij+5J/dyceyJ+a3VD1+b5Hu4nG+SmPJqmiaaV5hkVlDKwZWAKspBBB4EEZEV6qRsUpSgFKV4kkA4n/ADoErPZNs6xsr3JNe55i3gKwOtescOCi35DdyP3cQPec/wBK9WP4mwOXzwi8VorZpe3HSQtDhgc7mZ/DIon5yfhV/wDs/YAiPETngzJGv2AzN/Ovoai7SWNlxeIaR+/JKwyUczZVVR0AsAPAV0NqPooYXCpBzRRvEc3a7OfLeJt4Wqr9sUiHzk5Gdr1E9jevNKwDIA18dbi1W2HltkeH5VdVROybVGPIq00xDvwuOdt4ea5/pb41f4kd41TqbXgon5OftqcNpo395Cv3WJ/rFapg8S8UiyIxV0YMrDIqwNwRW9bXoN3svovKv8n/AG1o82EdY0kZCEk3gjcm3CA1vIketUxP2IxlXuZ05s51mGkMGk2QkX93Mo4B1AuQOjAhh525GtnrnPYXp75PpARM1o8SBGb8O0FzEfO5KD+8royqExSlKAVDe1/ZyD2mOwoC2DPNGSFFhm8iE5DK5K88yM8jMlQ/+0DrOVRcBG1i4EkxHuX/AHafEjeP1V5GgI01Y1txeCNoZbpe5jfvRnjy4rx4qQTUkaI2uwOAJ4HjbmVO+n5bw8rHzrQ9Q9TnxxZmbs4luN+1yz2yVRztcE/DrV/pXZfjEuYSk6joQj/dY29GNYerdFFGaW1cEnYbXnCyew6MTy7RQfunP8KrSaxsfYjUeJYt+VqgDSehcTBftsPLHbmyMF+DWsfhWPvWHib6ZpZEu0T/AIrWRluZJo0H0iqgfjf8awmkNokEd7OJG6IpP8RIH41Dd6yOj9C4iYgRQSPfmqHd+LcAPEmixJds1676ijZ9MbS8XJcRbsK9QAz+pFh8BfxrTMVO8jF3ZnZsyzEsT5k5mt80LsvxD2bESLCuVwO+/iMjujzufKt90TqXg4I2RYQ5dSjPJ3nIIsbHgn2QK7vGPQ0nPshTVSQLjMMx4LPET5CRb10pgTmR4VzbrPotsJiZIST3Guje8hzVvOxHDneugdVtICeGGYf7SNSfBiLMPgwI+FcyeGMfTiZylKVk4KrQzWyOYqjSup0GrKk7gm4qnSlAQxttFmUf/a59VB/Wtk0nqmH0DHDu2lijE6jiRIQZJF8bh3W3Xd6CsdtD0f8AKdKYPD8Q8jFx9BViZ/4VepVpF1FfsTVyf6OUcNM0bq6ndZGDKRxDKbg/AgV1zoXHCeCKZeEsaSDw31DW+F65V1swHYYyeECwjldV+rvEp/CRXQOxPFmTRMFzcoZE+CuxUfBSo+FXIG7UpSgPlcp6YxEmkdIuyklsRNZL8lJ3Y7+CoF+C11HpN92GRhxCMfRSa5y2LwK2k4mbhGrv8bbg9N+/wrjdI7FW6Jt0Dq+sEKRJ3FRQBl3jzLN4k3J8TWXgwAUGzGrqva1hRRWU5VRZyYdhwzHh/lWPm0fE/tQxN9ZFP5is9VljUtY9eNclGuUZUr7MdDgIl9mGJfqoo/IVVaJTyqpSsFE2uiznw9sxmKoVkyKxhFYkqL45N9kVbdMIBJh5gM3R0b7BDD+c+lZbYlpPfw7wk96F95fqSZ/gysftCrbbrIOxwy8y8hHkFUH+YVpmoelzg8VHK4YRSAo5sbFC1iw67rKDl7pFWSuBGT1ynRqtcX619q1wEoItcEHMEcCDnl+dXVYTEo06FKUoZFKUoDV9FYHtNKYjEH2YUECf3j2kc+YTsx9s1tFeIYlW+6LXYsfEsbk17oDn7bJh9zSkx5Osbj/DVT+KmpU/Z8v/AOln+/kt92P9b1HO3dbaRXxgjP8AFIP0qUdhMO7omI++8rekjJ/RV10Rl2b3SlK6cKOJi3kZfeUr6i1c0bL8QYNJxq43S2/E1+TEGw899VHxrpyubdruh2wek3kS6rK3yiJhfJi13APAESbxtyBXrXGrVGoummTrgscRZWFxwB5/+ayqyqeY/KtK1E00mNhSZbBhlKvuyDiPI+0PA+dbLUYya4ZfIot2jINKo+cPzq0xMu95CqVK65Nk1GhSlKyaPjGwv0rG1dYyT5o+NazrprEmCgLsQZWuIk5s3Uj3RcEnyHEisvl0i8PbG2Rttm0kJMWsSm4gSx+u/eb+Hsx5g1uUeqMeI0Xh4HG5IkYdHtmkkg32B6qS1iPDqBUTaMwE+NnYIpklbfka5AvxZiSchcn1IrYNUtdsRgm7KYNJEp3TG+Tx2NiEJzFvcOWXLjVnF0kvBCMls3JcM2XU3WOTAyDAY+6bmUUpzUKTkC3OPo3LgbAZSphsQGAzGeYtwPiDzrW2jwekYFYqk0bcL5Mh5i+TI3XhVvonVdMObQYnExp/Z78bxjO5sskbbt75kZ1NtFtXVdrwblSqWHjKixct4m36AVVoRYpSlAKUpQEE7dHvpED3YYx+Lt/VU6akaPOHwGGhIsyRJvDo5UM/8RaoRxmDGkdYWjA3k7YK/MdnAoD+QIjI82HWuiDV10RfZ9pSldOCtW2jaqrpHCmPJZUu0Ln5r24EjPdbgfgbGwraaUByvoTSuK0Vi2G6VdTuyxPwYDOxt53Vh1uLg5zdqvrhhMYgZJQj/OikIV1PPwYfSH4HKrnaJqNDpFAxPZzoLJKBe49xx85fxB4cwYB1k1axej5LTxMmfdkW5RjnYpIOeV7ZMOYFZlGzUZUdJrKp4Mp8iDXouOo9a5x0drjiYwASsij3xc/eFiT4m9ZmDX9fnYcjxV7/AIFf1qLjNeCycH5/wm2XHRrxkT1BPoM6tJNNRnJW+JBHpl+dQ9PtBHzMOftSW/AL+tYPSmuGJlBAYRqeUYsfvElvQiuKE34o1tCP5JY1r10w2FUjfEsvKNDcg/Tb5o4cczyFQzpnSU2LmMkhLyOQFUA2Av3UReQzyHjzJJrxobRU+Kk3IImlc5m3AeLMclHiSKmLUXZ2uEtNMyyTgd0AdyPruk5s3jYW5daqkoL8mHKWR10j1s41Z+Rwbzj9/LYvz3APZQeV7m3E9bCsZtX1WWWJsXEtpYxeQD/aIOJP0lGd+YBGdhW/UIqO7uz0vHHXU5/1K1kkwUwcXaNrCROTL1HRhyPw4E1PWCxCSRpIjbyOoZSOYIuPLyrnzW3Row2MmhHso53fqNZk/hYVIexPSxeKTCsf/bPaJ13HNnFugax+2arkja2RDDNqWrJUwr3UeGVVatcCeNXVTXR2aqTFKstOaSTDQSTv7Malre8eCqPFmIUeJq20HjFXDxdpLH2m4rS94f8AuMN6TLj7RaumDLVidbdMLhMLLO1rovcB+dI2SD7xF/AGmL07GvsXc+g9T+gqKNZcTNpfSEeEjfuqxBIvuLb23tfMKBYXzJvn3hSLUnSOyTirZtP7PmgiElx8ly0pMcZOZKhrytfnvOAOvcbrUu1j9F4JIIo4Y1skaqiDwUWFzzPMnmTV4DXoPOVKV8Br7QClKUAqhisOkiMjorowsysAykdCpyIqvSgI51k2SYKe7Ql8M5v7HfjuesbcPJWUVEMWp0smNnwkUkbtBvbzm6qdxgpHA2a5tb6Jrp+aQKrMeCgk+QFzUO7DsM07YzEvxlkG8eh70jW8y49K5JtLg1BJvno1rC7Kca/GSBRfMl3PoAmdbVoPZJh0IbEzPMfcQdmnkTcsfgVqUocEoFhf1qjMm6bVhuVcm6jfBaaNwMUCBIYkjQfNQBR5nqfE51cUpUzRYYlLN551Tq5x3EVbVN9nqg7iiEdsKAaRYge1HGT4nd3fyUV82Pz7ukUH9oki+il/6KstpGNEukZ2BuqsIx/u1CG32gx+NX2x7D7+kVb+zSR/Vez/AOpXp/h+jxrnJx9k74EcfhV0TVnBKFB5m9YrWjTiYaB5pDko7q++59lR4k+gueVQTLyi3Jt9Gt6/aV+UYyDAoe5Gwnnt9AXjQ+GdyLfOU8qr1GuhNaFieeeRGknma97hVAvcjezIzPC3BRXptKY7SL9jBGSG4pGLC303JyHiSBWp45Sf4MxyRijL636z8cNhiXdjuMy52vluJbix4XHC+WfCRdk2p/yGAvKB8plA3+fZpxWMHrza3Owz3QattnOz+PBWmlKy4m2RHsRX4hL8W+mfIWzvvi1WMFFUiM5ubtlZTXtTVJaqrWyZ7WvdeFqpQClKUApSlAYXXeQro/FsDYjDzEHoeyexqP8AYBMqYKS59qd7noRHFb8PzqTNO4TtsPND/axSR/fRl/WoR2LaUCNLg37rM2+gORLKN2RbHmAoNvot0rMrStFMaTlTJzRxa9xarTFOGOXAVZYHgfP9BVxU3K0bcNZClK8TSBR+VZOpWW2NbvW6Ctc1306uDwzyXHaNdIh1cjI26L7R8rcxVzrJp+HCRl5nsTfdQZvIeir6Z8BUGa2awS42YySZKMkQHuovQdSebcz0FgEIbOyk8ihGl2Yh3JJJNycyTUu7F9EGOB8QwzmO6v1EJz+LE/cFRhoHBpLOqSSLFGTd3Zgu6oza1+LWyA61JmlNpGFgjEWEjMm4oVCQUjUAWHHvtawysPOqzt8Iji1T2kb1pPHxwRtJK4SNRcsfyA4knkBmah3TWk8RpnGJDEpWO9o0PBF+dLIRle2Z6DIXOZw+ldK4vSE6qxMjsd2ONBZQTyROXmc8szU17ONT1wEV2s08oHasMwo4iNPojmeZ8ALchDXljJl24XRi9G7KMChvI0s3gzBF9EAb+Kt40Xo+KBNyGJI091FCi/U24nxNXSrVRVrZIKK9qKKtVVWgCiqiivirVVRXTgUV6pSgFKUoBSlKA+VAu2PVaXCYr/1DDBhHIwdmXjFMTmT0VjmDwuSMsrz3VviYVdWR1V0YFWVgGVgciCDkQelARDqhtRgZAmMBif8AtFUtG3DMqLsh8ACPEcK3OPW3AEXGNw/xkUH0JvWta1bHoZGMmDl7Fjc9m4LR3+iw7yD73hatJxWyXSamyxxSeKSqB/HumsaI3u/JI+l9ouj4gbTdo3SNS9/Jsl/GtE1g2pyPcYaIR3/2klnfzCeyp894VbYTZFpFva7CP68hP8itW06G2NRKQcTiXfh3I1EY8QXbeJB8ADXdEd9SXgh/SGNkmcvLIzueLMST5eA8OAq1rqnQ2rmFwqbsEEcYOTG28zW4bzNdm+Jq5fRcJ4wRHzjQ/pXTBybWy6u6kY3FkdnAyIeMkoKRgdQSLt9kGukYMDGnsRov1VVfyFV9yunDUdRdSIMAu8v7yZhZpGFjbmqD5i/ieZ4AbUEqqEr2Erh0pBKqKlVAle1Shw8Kle1WvYWvVdB8Ar7SlAKUpQH/2Q==" id="image">
+              <br> <br> <br><br>
+        <hr>
+        Trustworthiness, Commitment, Integrity, Ethics, Fair-play, Compliance, Transparency, Persistence, Ownership, Finishing to the end, Doing the most difficult task first
+ </div>
+    
+    <div id="middle"
+    align="center">
+        <h1 id="myh2">Compassion</h1>
+              <img src="https://img.freepik.com/free-icon/handshake_318-711708.jpg" id="image">
+              <br> <br> <br><br>
+        <hr>
+        Empathy, Respect , Gratitude, Inclusiveness
+        </div>
+    <div id="middle"
+    align="center">
+        <h1 id="myh2"> Centric</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoAOVxVxpCpkB8dhxhd5ZP5krJX-O7T38hyA&usqp=CAU" id="image">
+        <br> <br> <br><br>
+        <hr>
+        Customer (External as well as Internal i.e. Employees & Partners),
+        Responsiveness, Pro-Feedback, Accountability
+            </div>
+    <div id="middle"
+    align="center">
+        <h1 id="myh2">Collective Growth</h1>
+        <img src="https://www.pinpng.com/pngs/m/651-6514423_donate-icon-group-infographic-group-people-icon-hd.png" id="image">
+        <hr>
+        Profitability, Cost-consciousness, Inclusiveness, Sustainability, Community service, Social Responsibility
+                </div>  
+</div>
+<!-- outer div ends -->
+<br> <br> <br>
+<img src="https://www.smartsheet.com/sites/default/files/ic-og-MissionVisionStatementTemplates-FacebookLinkedIn.jpg" id="picture">
+<img src="https://flex.bi/wp-content/uploads/2018/06/people-discussing-graph-on-screen.png" id="picture" >
+
+<div
+align="center" 
+style="float: left;;background-color: white; width: 50%;">
+<p style="float: left">
+    <h1 id="myh2">Our Vision</h1>
+    To be the most trusted gifting brand to celebrate 
+    <br>
+    the joy of giving .
+</div>
+</p>
+<div 
+align="center"
+style="float: left;background-color: white; width: 50%;">
+<p >
+    <h1 id="myh2">Our Mission</h1>
+    Wow every customer every time, through premium products, services, value-for-money driven by innovation, technology & people-first approach
+</div>
+</p>
+<br><br>
+<div 
+align="center"
+style="float: left;background-color: white; width: 50%;">
+<p >
+    <h1 id="myh2">Annual return</h1>
+    Download report<a href="https://www.fnp.com/info/about-us"target="_blank"><br>click here</a>
+    <br>
+    (note:-this site will refer to f&p original site)ˀ
+</div>
+</p>
+<br>
+<div 
+align="center"
+style="float: left;background-color: white; width: 50%;">
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<br>
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<br>
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<img src="https://img.freepik.com/free-vector/single-flower-clay-pot_1308-81806.jpg?w=2000" id="image" >
+<br>
+</div>
+<div id="myh4">
+    <img src="https://w7.pngwing.com/pngs/820/269/png-transparent-white-and-blue-airplane-illustration-airplane-emoji-text-messaging-computer-icons-sticker-planes-angle-vehicle-transport-thumbnail.png" id="image">
+    <h1 id="myh2">worldwide delivery</h1>
+    <p>
+        <br> <br> <br> 
+        We deliver gifts to over 70 countries
+    </p>
+</div>
+<div id="myh4">
+    <img src="https://media.istockphoto.com/id/1129920940/vector/open-padlock-and-check-mark-icon-isolated-on-white-background-security-check-lock-sign.jpg?s=170667a&w=0&k=20&c=feCjLhjbDmApk1oMg7frSsb9bHY-zVC1FsQ3o2HndcU=" id="image">
+    <h1 id="myh2">100% safe & secure payments</h1>
+    <p>
+        Pay using secure payment methods
+    </p>
+</div>
+<div id="myh4">
+    <img src="data:image/png;base64,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" id="image">
+    <h1 id="myh2">dedicated help center</h1>
+    <p>
+        <br><br><br>
+        Call us +91 9212422000 | 8:00AM-10:30PM
+    </p>
+</div>
+<div id="myh4">
+    <img src="data:image/png;base64,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" id="image">
+    <img src="https://cdn-icons-png.flaticon.com/512/94/94225.png" id="image">
+    <h1 id="myh2">shop on the go</h1>
+    <p>
+        <br><br><br>
+        Download mobile app
+    </p>
+</div>
+<br><br><br>
+<form>
+<br><br><br>
+<h3 id="myh2" style="text-shadow: 5px 5px 5px white;">subscribe</h3>
+<input
+type="button"
+id="button"
+value="submit"
+>
+<input
+type="email" name="email" id="button-1" placeholder="eg-joe@gmail.com">
+<img src="https://static.vecteezy.com/system/resources/previews/004/999/412/original/mail-icon-envelope-sign-email-symbol-free-vector.jpg" id="button-image">
+
+</form>
+<br><br>
+<h3 id="myh2" style="text-shadow: 5px 5px 5px white;">Get updates on promotions and offers coupons.</h3>
+</form>
+<br><br>
+<div id="myh5">
+1994-2023 
+<br>
+fnp.com.
+<br>
+All rights reserved.
+<br>
+</div>
+<div id="myh5">
+    Keep in touch
+    <img src="data:image/png;base64,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" id="image">
+    <img src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk" id="image">
+    <img src="https://i.pinimg.com/280x280_RS/f6/e9/3a/f6e93a06b500b2d87ffd32e1f56f7c6f.jpg" id="image">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" id="image">
+    </div>
+    <div id="myh5">
+        <img src="https://www.visa.com/images/merchantoffers/2022-09/1663659882602.visa_logo.jpg" id="image">
+        <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" id="image">
+        <img src="https://financialit.net/sites/default/files/068bjcjwbw0snwhiq0kno5m-15.1602794215.png" id="image">
+        <img src="https://w7.pngwing.com/pngs/123/955/png-transparent-india-rupay-debit-card-bank-credit-card-india-text-trademark-logo.png"id="image">
+        <img src="https://seeklogo.com/images/D/Discover_Network-logo-6B25762CF6-seeklogo.com.png" id="image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Maestro_2016.svg/800px-Maestro_2016.svg.png" id="image">
+        <img src="https://paymentinstitutions.eu/wp-content/uploads/2017/08/Diners_Club_International_logo.jpg" id="image">
+        <img src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.jpg" id="image">
+        </div>
+        <br><br>
+</body>
+</html>
